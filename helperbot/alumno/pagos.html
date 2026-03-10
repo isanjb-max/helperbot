@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIEST - Pagos y Adeudos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .monto-deuda { color: #e74c3c; font-weight: bold; font-size: 16px; }
+        .monto-pagado { color: #27ae60; font-weight: bold; }
+        .btn-pagar { background: #3498db; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-weight: bold; }
+        .btn-pagar:hover { background: #2980b9; }
+        .alerta-deuda { background: #fadbd8; border-left: 5px solid #e74c3c; padding: 15px; margin: 15px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+    <div class="top-admin-bar">
+        <div><button class="btn-modulos">Módulos</button></div>
+        <div class="top-user-actions">
+            <span>Bienvenido <strong id="nombreUsuario">Cargando...</strong></span>
+            <button class="btn-system" onclick="window.cerrarSesion()">Cerrar Sesión</button>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <div class="header-main-title">
+            <i class="fa-solid fa-money-check-dollar green-arrow-icon"></i>
+            Estado de Cuenta
+        </div>
+        <div class="breadcrumb-text">Administración Financiera >> Pagos y Adeudos</div>
+    </div>
+
+    <div class="tabs-navigation">
+        <a href="inicio.html" class="tab-link">Información general</a>
+        <a href="calificaciones.html" class="tab-link">Calificaciones</a>
+        <a href="horario.html" class="tab-link">Horario</a>
+        <a href="pagos.html" class="tab-link active">Pagos</a>
+        <a href="buzon.html" class="tab-link">Buzón de Quejas</a>
+    </div>
+
+    <div id="alertaAdeudosContainer"></div>
+
+    <div class="info-section-box">
+        <div class="section-header-bar" style="background-color: #c0392b;">🔴 Cargos Pendientes (Adeudos)</div>
+        <table class="data-display-table">
+            <thead style="background-color: #f2f2f2; font-weight: bold;">
+                <tr>
+                    <td>Concepto</td>
+                    <td>Fecha Límite</td>
+                    <td>Monto</td>
+                    <td style="text-align: center;">Acción</td>
+                </tr>
+            </thead>
+            <tbody id="tablaAdeudos">
+                <tr><td colspan="4" class="loader text-center">Revisando estado de cuenta...</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="info-section-box">
+        <div class="section-header-bar" style="background-color: #27ae60;">🟢 Historial de Pagos Realizados</div>
+        <table class="data-display-table">
+            <thead style="background-color: #f2f2f2; font-weight: bold;">
+                <tr>
+                    <td>Folio de Recibo</td>
+                    <td>Concepto</td>
+                    <td>Fecha de Pago</td>
+                    <td>Monto Pagado</td>
+                </tr>
+            </thead>
+            <tbody id="tablaHistorialPagos">
+                <tr><td colspan="4" class="loader text-center">Cargando historial...</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script type="module" src="../js/auth_router.js"></script>
+    <script type="module" src="pagos_app.js"></script>
+    <script type="module" src="../components/helperbot/bot_ui.js"></script>
+</body>
+</html>

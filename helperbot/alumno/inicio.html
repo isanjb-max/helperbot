@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIEST - Panel del Alumno</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <div class="top-admin-bar">
+        <div><button class="btn-modulos">Módulos</button></div>
+        <div class="top-user-actions">
+            <span>Bienvenido <strong id="nombreUsuario">Cargando...</strong></span>
+            <button class="btn-system" onclick="window.cerrarSesion()">Cerrar Sesión</button>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <div class="header-main-title">
+            <i class="fa-solid fa-play green-arrow-icon"></i>
+            Panel del alumno
+        </div>
+        <div class="breadcrumb-text">Proceso de Planeación >> Información General</div>
+    </div>
+
+    <div class="tabs-navigation">
+        <a href="inicio.html" class="tab-link active">Información general</a>
+        <a href="calificaciones.html" class="tab-link">Calificaciones</a>
+        <a href="horario.html" class="tab-link">Horario</a>
+        <a href="pagos.html" class="tab-link">Pagos</a>
+        <a href="buzon.html" class="tab-link">Buzón de Quejas</a>
+    </div>
+
+    <div class="info-section-box">
+        <div class="section-header-bar">Datos del alumno</div>
+        <table class="data-display-table">
+            <tr><td class="label-cell">Nombre:</td><td id="infoNombre">Cargando...</td></tr>
+            <tr><td class="label-cell">Rol:</td><td>Alumno</td></tr>
+            <tr><td class="label-cell">Estado:</td><td class="status-complete">Activo en Sistema</td></tr>
+        </table>
+    </div>
+
+<script type="module" src="../js/auth_router.js"></script>
+    
+    <script type="module" src="alumno_app.js"></script>
+    <script type="module" src="../components/helperbot/bot_ui.js"></script>
+</body>
+</html>

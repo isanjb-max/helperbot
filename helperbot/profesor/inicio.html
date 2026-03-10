@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Docente | UT Costa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <div class="top-admin-bar">
+        <div><button class="btn-modulos">Módulos Docentes</button></div>
+        <div class="top-user-actions">
+            <span>Bienvenido <strong id="nombreUsuario">Profe Cargando...</strong></span>
+            <button class="btn-system" onclick="window.cerrarSesion()">Cerrar Sesión</button>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <div class="header-main-title">
+            <i class="fa-solid fa-play green-arrow-icon"></i>
+            Panel del Docente
+        </div>
+        <div class="breadcrumb-text">Gestión Académica >> Mis Grupos</div>
+    </div>
+
+    <div class="tabs-navigation">
+        <a href="inicio.html" class="tab-link active">Mis Grupos</a>
+        <a href="horario.html" class="tab-link">Mi Horario</a>
+        <a href="buzon.html" class="tab-link">Reportes y Buzón</a>
+    </div>
+
+    <div class="info-section-box">
+        <div class="section-header-bar">Grupos Asignados</div>
+        <div class="grid-grupos">
+            <p>Aquí cargaremos dinámicamente tus grupos desde Firebase...</p>
+        </div>
+    </div>
+
+    <script type="module" src="../js/auth_router.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIEST - Mi Horario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .tabla-horario { width: 100%; border-collapse: collapse; background: white; text-align: center; }
+        .tabla-horario th { background-color: #34495e; color: white; padding: 12px; border: 1px solid #2c3e50; }
+        .tabla-horario td { border: 1px solid #ddd; padding: 10px; vertical-align: middle; height: 60px; }
+        .col-hora { font-weight: bold; background-color: #f9f9f9; width: 100px; }
+        .clase-activa { background-color: #e8f6e9; border-left: 4px solid #27ae60 !important; }
+        .clase-vacia { color: #aaa; font-style: italic; }
+        .materia-text { font-weight: bold; color: #2c3e50; display: block; margin-bottom: 5px; }
+        .profe-text { font-size: 11px; color: #555; }
+    </style>
+</head>
+<body>
+
+    <div class="top-admin-bar">
+        <div><button class="btn-modulos">Módulos</button></div>
+        <div class="top-user-actions">
+            <span>Bienvenido <strong id="nombreUsuario">Cargando...</strong></span>
+            <button class="btn-system" onclick="window.cerrarSesion()">Cerrar Sesión</button>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <div class="header-main-title">
+            <i class="fa-solid fa-calendar-days green-arrow-icon"></i>
+            Mi Horario de Clases
+        </div>
+        <div class="breadcrumb-text">Proceso de Planeación >> Horario Escolar</div>
+    </div>
+
+    <div class="tabs-navigation">
+        <a href="inicio.html" class="tab-link">Información general</a>
+        <a href="calificaciones.html" class="tab-link">Calificaciones</a>
+        <a href="horario.html" class="tab-link active">Horario</a>
+        <a href="pagos.html" class="tab-link">Pagos</a>
+        <a href="buzon.html" class="tab-link">Buzón de Quejas</a>
+    </div>
+
+    <div class="info-section-box" style="padding: 15px; overflow-x: auto;">
+        <div class="section-header-bar" style="margin-bottom: 15px;">Horario Semanal - Grupo: <span id="lblGrupo">...</span></div>
+        <div id="horarioContenedor">
+            <div class="loader text-center">Cargando tu horario desde Control Escolar...</div>
+        </div>
+    </div>
+
+    <script type="module" src="../js/auth_router.js"></script>
+    <script type="module" src="horario_app.js"></script>
+    <script type="module" src="../components/helperbot/bot_ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+/* css/style.css */
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
+body { background-color: #f0f0f0; color: #333; }
+
+/* BARRA SUPERIOR */
+.top-admin-bar {
+    background-color: #444; color: #fff; padding: 5px 20px;
+    display: flex; justify-content: space-between; align-items: center; font-size: 12px;
+}
+.btn-modulos { background-color: #555; color: white; border: none; padding: 2px 12px; cursor: pointer; font-size: 11px; }
+.top-user-actions { display: flex; align-items: center; gap: 15px; }
+.btn-system { background-color: #666; color: white; border: 1px solid #888; padding: 2px 8px; cursor: pointer; font-size: 11px; }
+.btn-system:hover { background-color: #888; }
+
+/* HEADER PRINCIPAL */
+.page-header { background-color: #fff; padding: 10px 20px; border-bottom: 1px solid #ccc; }
+.header-main-title { display: flex; align-items: center; gap: 10px; font-size: 22px; font-weight: bold; color: #000; }
+.green-arrow-icon { color: #8cc63f; font-size: 26px; }
+.breadcrumb-text { font-size: 12px; color: #555; margin-top: 5px; }
+
+/* PESTAÑAS (TABS) - ALUMNOS */
+.tabs-navigation { background-color: #555; display: flex; padding: 0 10px; margin-top: 5px; }
+.tab-link { padding: 10px 18px; color: #ccc; font-size: 13px; text-decoration: none; cursor: pointer; }
+.tab-link:hover { color: #fff; }
+.tab-link.active { background-color: #eee; color: #000; font-weight: bold; border-radius: 4px 4px 0 0; margin-top: 5px; }
+
+/* SECCIÓN DE DATOS (TABLA) */
+.info-section-box { margin: 15px; border: 1px solid #999; background-color: #fff; border-radius: 4px; overflow: hidden; }
+.section-header-bar { background-color: #444; color: white; padding: 6px 12px; font-size: 12px; font-weight: bold; }
+.data-display-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.data-display-table td { padding: 10px 15px; border-bottom: 1px dotted #ccc; }
+.label-cell { font-weight: bold; width: 200px; color: #000; }
+.status-complete { color: #27ae60; font-weight: bold; }
+
+/* PANELES PROFESOR */
+.grid-grupos { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; padding: 20px; }
+
+
+/* =========================================
+   ESTILOS DE PASE DE LISTA
+========================================= */
+.lista-controls {
+    margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center;
+}
+.lista-date-input { padding: 5px; border: 1px solid #ccc; border-radius: 4px; }
+.btn-guardar {
+    background: #e67e22; color: white; border: none; padding: 10px 20px; 
+    font-weight: bold; border-radius: 4px; cursor: pointer;
+}
+.btn-guardar:hover { background: #d35400; }
+.tabla-head-gris { background-color: #f2f2f2; font-weight: bold; }
+.text-center { text-align: center; }
+.text-presente { color: #27ae60; }
+.text-falta { color: #c0392b; }
+.radio-lg { transform: scale(1.5); }
