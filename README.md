@@ -1,2 +1,0 @@
-# helperbot
-ia sobre 
