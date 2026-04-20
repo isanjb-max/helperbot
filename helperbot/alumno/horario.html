@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIEST - Mi Horario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* ESTILOS DE PERIODOS (Igual a Calificaciones) */
+        .periods-container { margin: 10px 15px; }
+        .periods-title { font-size: 12px; font-weight: bold; margin-bottom: 5px; }
+        .periods-bar { display: flex; gap: 5px; overflow-x: auto; padding-bottom: 5px;}
+        .period-block { border: 1px solid #ccc; padding: 10px 20px; text-align: center; cursor: pointer; background: #fff; min-width: 100px; }
+        .period-block:hover { background: #f0f0f0; }
+        .period-block.active { background-color: #cddc39; border-color: #8cc63f; }
+        .period-block .group-name { font-size: 18px; font-weight: bold; color: #000; }
+        .period-block .period-date { font-size: 11px; color: #555; margin-top: 3px; }
+
+        /* ESTILOS DE LA TABLA HORARIO */
+        .horario-container { margin: 0 15px 15px 15px; background: #fff; overflow-x: auto; border: 1px solid #ccc; }
+        .horario-table { width: 100%; border-collapse: collapse; min-width: 1000px; }
+        .horario-table th { background: #444; color: white; padding: 8px; font-size: 12px; border: 1px solid #555; text-align: center; font-weight: bold; }
+        .horario-table td { border: 1px solid #eee; padding: 4px; text-align: center; vertical-align: middle; width: 14.28%; }
+        .col-hora { font-weight: bold; background: #f9f9f9; font-size: 12px; width: 90px !important; }
+        
+        .class-card { background: #fff; border: 1px solid #ddd; padding: 8px 4px; border-radius: 4px; height: 100%; min-height: 50px; display: flex; flex-direction: column; justify-content: center; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+        .materia-name { font-weight: bold; font-size: 11px; color: #000; margin-bottom: 4px; }
+        .materia-teacher { font-size: 10px; color: #666; }
+        
+        .loader-msg { padding: 20px; text-align: center; color: #666; font-style: italic; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <div class="top-admin-bar">
+        <div><button class="btn-modulos">Módulos</button></div>
+        <div class="top-user-actions">
+            <span>Bienvenido <strong id="nombreUsuario">Cargando...</strong></span>
+            <button class="btn-system" onclick="window.cerrarSesion()">Cerrar Sesión</button>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <div class="header-main-title">
+            <i class="fa-solid fa-play green-arrow-icon"></i>
+            Panel del alumno
+        </div>
+        <div class="breadcrumb-text">Proceso de Planeación >> Planeación y evaluación</div>
+    </div>
+
+    <div class="tabs-navigation">
+        <a href="inicio.html" class="tab-link">Información general</a>
+        <a href="calificaciones.html" class="tab-link">Calificaciones</a>
+        <a href="horario.html" class="tab-link active">Horario</a>
+        <a href="pagos.html" class="tab-link">Pagos</a>
+        <a href="buzon.html" class="tab-link">Buzón de Quejas</a>
+    </div>
+
+    <div class="periods-container">
+        <div class="periods-title">Periodos/grupos:</div>
+        <div class="periods-bar" id="periodsBar">
+            <div class="loader-msg">Cargando periodos...</div>
+        </div>
+    </div>
+
+    <div class="horario-container">
+        <table class="horario-table">
+            <thead>
+                <tr>
+                    <th>Hora</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                    <th>Sábado</th>
+                </tr>
+            </thead>
+            <tbody id="horarioBody">
+                <tr><td colspan="7" class="loader-msg">Selecciona un periodo para ver tu horario.</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../js/auth_router.js"></script>
+    <script src="horario_app.js"></script>
+    <script type="module" src="../components/helperbot/bot_ui.js"></script>
+</body>
+</html>

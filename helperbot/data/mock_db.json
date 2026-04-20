@@ -1,0 +1,672 @@
+{
+    "usuarios": [
+        {
+            "id": "050280324",
+            "correo": "al05-028-0324@utdelacosta.edu.mx",
+            "password": "1234",
+            "rol": "alumno",
+            "nombre": "Omar Isaias Rodriguez Zamorano",
+            "carrera": "Desarrollo de Software",
+            "semestre": "5to Cuatrimestre"
+        },
+        {
+            "id": "050280325",
+            "correo": "al05-028-0325@utdelacosta.edu.mx",
+            "password": "1234",
+            "rol": "alumno",
+            "nombre": "Juan Perez",
+            "carrera": "Desarrollo de Software",
+            "semestre": "5to Cuatrimestre"
+        },
+        {
+            "id": "PROFE01",
+            "correo": "profesor@utcosta.edu.mx",
+            "password": "admin",
+            "rol": "profesor",
+            "nombre": "Ing. Arturo Díaz"
+        }
+    ],
+    "calificaciones": {
+        "050280324": {
+            "DSM51": {
+                "periodo_texto": "2026 Ene - Abr",
+                "materias": [
+                    {
+                        "nombre": "Desarrollo de API y Servicios",
+                        "profesor": "Lic. Fernando Ruiz",
+                        "unidades": [
+                            {
+                                "nombre": "Unidad 1", "nivel": "Ordinario", "calificacion_total": 90.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 85.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 90.0 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 2", "nivel": "Ordinario", "calificacion_total": 84.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 90.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 90.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 80.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 85.0 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 3", "nivel": "Ordinario", "calificacion_total": 95.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 90.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 90.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 100.0 }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nombre": "Administración de Servidores",
+                        "profesor": "Mtra. Ana López",
+                        "unidades": [
+                            {
+                                "nombre": "Unidad 1", "nivel": "Ordinario", "calificacion_total": 88.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 80.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 90.0 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 2", "nivel": "Ordinario", "calificacion_total": 92.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 90.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 90.0 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 3", "nivel": "Ordinario", "calificacion_total": 85.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 90.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 80.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 85.0 }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nombre": "Matemáticas para la Computación",
+                        "profesor": "Ing. Luis Torres",
+                        "unidades": [
+                            {
+                                "nombre": "Unidad 1", "nivel": "Ordinario", "calificacion_total": 78.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 90.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 90.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 70.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 80.0 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 2", "nivel": "Ordinario", "calificacion_total": 82.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 90.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 90.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 80.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 80.0 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 3", "nivel": "Ordinario", "calificacion_total": 86.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 80.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 85.0 }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nombre": "Proyecto Final de Carrera",
+                        "profesor": "Mtra. Sofía Castro",
+                        "unidades": [
+                            {
+                                "nombre": "Unidad 1", "nivel": "Ordinario", "calificacion_total": 95.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 90.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 97.5 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 2", "nivel": "Ordinario", "calificacion_total": 98.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 95.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 100.0 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 3", "nivel": "Ordinario", "calificacion_total": 96.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 90.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 100.0 }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nombre": "Aseguramiento de Calidad",
+                        "profesor": "Mtra. Sofía Castro",
+                        "unidades": [
+                            {
+                                "nombre": "Unidad 1", "nivel": "Ordinario", "calificacion_total": 100.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 100.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 100.0 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 2", "nivel": "Ordinario", "calificacion_total": 95.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 90.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 97.5 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 3", "nivel": "Ordinario", "calificacion_total": 92.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 85.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 95.0 }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nombre": "Inglés Técnico Avanzado",
+                        "profesor": "Teacher Sarah Connor",
+                        "unidades": [
+                            {
+                                "nombre": "Unidad 1", "nivel": "Ordinario", "calificacion_total": 88.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 90.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 85.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 87.5 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 2", "nivel": "Ordinario", "calificacion_total": 90.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 85.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 90.0 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 3", "nivel": "Ordinario", "calificacion_total": 85.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 90.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 80.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 85.0 }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nombre": "Habilidades Directivas",
+                        "profesor": "Lic. Fernando Ruiz",
+                        "unidades": [
+                            {
+                                "nombre": "Unidad 1", "nivel": "Ordinario", "calificacion_total": 92.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 90.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 90.0 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 2", "nivel": "Ordinario", "calificacion_total": 95.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 90.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 97.5 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 3", "nivel": "Ordinario", "calificacion_total": 98.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 95.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 100.0 }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "DSM41": {
+                "periodo_texto": "2025 Sep - Dic",
+                "materias": [
+                    {
+                        "nombre": "Estructuras de Datos",
+                        "profesor": "Ing. Arturo Díaz",
+                        "unidades": [
+                            {
+                                "nombre": "Unidad 1", "nivel": "Ordinario", "calificacion_total": 95.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 90.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 97.5 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 2", "nivel": "Ordinario", "calificacion_total": 92.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 85.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 95.0 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 3", "nivel": "Ordinario", "calificacion_total": 88.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 90.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 85.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 87.5 }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "050280325": {
+            "DSM51": {
+                "periodo_texto": "2026 Ene - Abr",
+                "materias": [
+                    {
+                        "nombre": "Desarrollo de API y Servicios",
+                        "profesor": "Lic. Fernando Ruiz",
+                        "unidades": [
+                            {
+                                "nombre": "Unidad 1", "nivel": "Ordinario", "calificacion_total": 85.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 90.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 90.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 80.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 87.5 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 2", "nivel": "Ordinario", "calificacion_total": 88.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 90.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 85.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 87.5 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 3", "nivel": "Ordinario", "calificacion_total": 92.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 90.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 90.0 }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nombre": "Administración de Servidores",
+                        "profesor": "Mtra. Ana López",
+                        "unidades": [
+                            {
+                                "nombre": "Unidad 1", "nivel": "Ordinario", "calificacion_total": 90.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 85.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 90.0 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 2", "nivel": "Ordinario", "calificacion_total": 85.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 90.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 90.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 80.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 87.5 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 3", "nivel": "Ordinario", "calificacion_total": 88.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 80.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 90.0 }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nombre": "Matemáticas para la Computación",
+                        "profesor": "Ing. Luis Torres",
+                        "unidades": [
+                            {
+                                "nombre": "Unidad 1", "nivel": "Ordinario", "calificacion_total": 80.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 90.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 90.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 75.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 80.0 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 2", "nivel": "Ordinario", "calificacion_total": 85.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 80.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 82.5 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 3", "nivel": "Ordinario", "calificacion_total": 82.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 90.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 90.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 80.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 80.0 }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nombre": "Proyecto Final de Carrera",
+                        "profesor": "Mtra. Sofía Castro",
+                        "unidades": [
+                            {
+                                "nombre": "Unidad 1", "nivel": "Ordinario", "calificacion_total": 88.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 90.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 85.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 87.5 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 2", "nivel": "Ordinario", "calificacion_total": 92.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 90.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 90.0 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 3", "nivel": "Ordinario", "calificacion_total": 95.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 90.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 97.5 }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nombre": "Aseguramiento de Calidad",
+                        "profesor": "Mtra. Sofía Castro",
+                        "unidades": [
+                            {
+                                "nombre": "Unidad 1", "nivel": "Ordinario", "calificacion_total": 92.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 90.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 90.0 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 2", "nivel": "Ordinario", "calificacion_total": 90.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 85.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 90.0 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 3", "nivel": "Ordinario", "calificacion_total": 95.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 90.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 97.5 }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nombre": "Inglés Técnico Avanzado",
+                        "profesor": "Teacher Sarah Connor",
+                        "unidades": [
+                            {
+                                "nombre": "Unidad 1", "nivel": "Ordinario", "calificacion_total": 75.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 80.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 80.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 70.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 77.5 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 2", "nivel": "Ordinario", "calificacion_total": 80.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 90.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 90.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 75.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 80.0 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 3", "nivel": "Ordinario", "calificacion_total": 84.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 90.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 80.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 82.5 }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nombre": "Habilidades Directivas",
+                        "profesor": "Lic. Fernando Ruiz",
+                        "unidades": [
+                            {
+                                "nombre": "Unidad 1", "nivel": "Ordinario", "calificacion_total": 100.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 100.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 100.0 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 2", "nivel": "Ordinario", "calificacion_total": 98.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 95.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 100.0 }
+                                ]
+                            },
+                            {
+                                "nombre": "Unidad 3", "nivel": "Ordinario", "calificacion_total": 95.0,
+                                "instrumentos": [
+                                    { "nombre": "Métrica", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Portafolio", "ponderacion": "10%", "calificacion": 100.0 },
+                                    { "nombre": "Examen", "ponderacion": "40%", "calificacion": 90.0 },
+                                    { "nombre": "Práctica de ejercicios", "ponderacion": "40%", "calificacion": 97.5 }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "horarios": {
+        "050280324": {
+            "DSM51": {
+                "periodo_texto": "2026 Ene - Abr",
+                "clases": [
+                    { "dia": "Lunes", "hora": "08:00 - 08:50", "materia": "Proyecto Final de Carrera", "maestro": "Mtra. Sofía Castro" },
+                    { "dia": "Lunes", "hora": "08:55 - 09:45", "materia": "Matemáticas para la Computación", "maestro": "Ing. Luis Torres" },
+                    { "dia": "Lunes", "hora": "09:50 - 10:40", "materia": "Desarrollo de API y Servicios", "maestro": "Lic. Fernando Ruiz" },
+                    { "dia": "Lunes", "hora": "10:45 - 11:35", "materia": "Aseguramiento de Calidad", "maestro": "Mtra. Sofía Castro" },
+                    { "dia": "Lunes", "hora": "11:40 - 12:30", "materia": "RECESO", "maestro": "Receso" },
+                    { "dia": "Lunes", "hora": "12:35 - 13:25", "materia": "Administración de Servidores", "maestro": "Mtra. Ana López" },
+                    { "dia": "Lunes", "hora": "13:30 - 14:20", "materia": "Inglés Técnico Avanzado", "maestro": "Teacher Sarah Connor" },
+                    { "dia": "Lunes", "hora": "14:20 - 15:10", "materia": "Habilidades Directivas", "maestro": "Lic. Fernando Ruiz" },
+
+                    { "dia": "Martes", "hora": "08:00 - 08:50", "materia": "Administración de Servidores", "maestro": "Mtra. Ana López" },
+                    { "dia": "Martes", "hora": "08:55 - 09:45", "materia": "Desarrollo de API y Servicios", "maestro": "Lic. Fernando Ruiz" },
+                    { "dia": "Martes", "hora": "09:50 - 10:40", "materia": "Aseguramiento de Calidad", "maestro": "Mtra. Sofía Castro" },
+                    { "dia": "Martes", "hora": "10:45 - 11:35", "materia": "Matemáticas para la Computación", "maestro": "Ing. Luis Torres" },
+                    { "dia": "Martes", "hora": "11:40 - 12:30", "materia": "RECESO", "maestro": "Receso" },
+                    { "dia": "Martes", "hora": "12:35 - 13:25", "materia": "Proyecto Final de Carrera", "maestro": "Mtra. Sofía Castro" },
+                    { "dia": "Martes", "hora": "13:30 - 14:20", "materia": "Inglés Técnico Avanzado", "maestro": "Teacher Sarah Connor" },
+                    { "dia": "Martes", "hora": "14:20 - 15:10", "materia": "Habilidades Directivas", "maestro": "Lic. Fernando Ruiz" },
+                    { "dia": "Martes", "hora": "15:10 - 16:00", "materia": "HORA EXTRACURRICULAR", "maestro": "Deportes" },
+
+                    { "dia": "Miércoles", "hora": "08:00 - 08:50", "materia": "Administración de Servidores", "maestro": "Mtra. Ana López" },
+                    { "dia": "Miércoles", "hora": "08:55 - 09:45", "materia": "Habilidades Directivas", "maestro": "Lic. Fernando Ruiz" },
+                    { "dia": "Miércoles", "hora": "09:50 - 10:40", "materia": "Aseguramiento de Calidad", "maestro": "Mtra. Sofía Castro" },
+                    { "dia": "Miércoles", "hora": "10:45 - 11:35", "materia": "Matemáticas para la Computación", "maestro": "Ing. Luis Torres" },
+                    { "dia": "Miércoles", "hora": "11:40 - 12:30", "materia": "RECESO", "maestro": "Receso" },
+                    { "dia": "Miércoles", "hora": "12:35 - 13:25", "materia": "Proyecto Final de Carrera", "maestro": "Mtra. Sofía Castro" },
+                    { "dia": "Miércoles", "hora": "13:30 - 14:20", "materia": "Inglés Técnico Avanzado", "maestro": "Teacher Sarah Connor" },
+                    { "dia": "Miércoles", "hora": "14:20 - 15:10", "materia": "Desarrollo de API y Servicios", "maestro": "Lic. Fernando Ruiz" },
+                    { "dia": "Miércoles", "hora": "15:10 - 16:00", "materia": "Desarrollo de API y Servicios", "maestro": "Lic. Fernando Ruiz" },
+
+                    { "dia": "Jueves", "hora": "08:00 - 08:50", "materia": "TUTORÍA GRUPAL", "maestro": "Lic. Martín Vargas" },
+                    { "dia": "Jueves", "hora": "08:55 - 09:45", "materia": "Matemáticas para la Computación", "maestro": "Ing. Luis Torres" },
+                    { "dia": "Jueves", "hora": "09:50 - 10:40", "materia": "Aseguramiento de Calidad", "maestro": "Mtra. Sofía Castro" },
+                    { "dia": "Jueves", "hora": "10:45 - 11:35", "materia": "Aseguramiento de Calidad", "maestro": "Mtra. Sofía Castro" },
+                    { "dia": "Jueves", "hora": "11:40 - 12:30", "materia": "RECESO", "maestro": "Receso" },
+                    { "dia": "Jueves", "hora": "12:35 - 13:25", "materia": "Inglés Técnico Avanzado", "maestro": "Teacher Sarah Connor" },
+                    { "dia": "Jueves", "hora": "13:30 - 14:20", "materia": "Administración de Servidores", "maestro": "Mtra. Ana López" },
+                    { "dia": "Jueves", "hora": "14:20 - 15:10", "materia": "Proyecto Final de Carrera", "maestro": "Mtra. Sofía Castro" },
+
+                    { "dia": "Viernes", "hora": "08:00 - 08:50", "materia": "Habilidades Directivas", "maestro": "Lic. Fernando Ruiz" },
+                    { "dia": "Viernes", "hora": "08:55 - 09:45", "materia": "Inglés Técnico Avanzado", "maestro": "Teacher Sarah Connor" },
+                    { "dia": "Viernes", "hora": "09:50 - 10:40", "materia": "Matemáticas para la Computación", "maestro": "Ing. Luis Torres" },
+                    { "dia": "Viernes", "hora": "10:45 - 11:35", "materia": "Administración de Servidores", "maestro": "Mtra. Ana López" },
+                    { "dia": "Viernes", "hora": "11:40 - 12:30", "materia": "RECESO", "maestro": "Receso" },
+                    { "dia": "Viernes", "hora": "12:35 - 13:25", "materia": "Desarrollo de API y Servicios", "maestro": "Lic. Fernando Ruiz" },
+                    { "dia": "Viernes", "hora": "13:30 - 14:20", "materia": "Desarrollo de API y Servicios", "maestro": "Lic. Fernando Ruiz" },
+                    { "dia": "Viernes", "hora": "14:20 - 15:10", "materia": "Aseguramiento de Calidad", "maestro": "Mtra. Sofía Castro" }
+                ]
+            }
+        },
+        "050280325": {
+            "DSM51": {
+                "periodo_texto": "2026 Ene - Abr",
+                "clases": [
+                    { "dia": "Lunes", "hora": "08:00 - 08:50", "materia": "Proyecto Final de Carrera", "maestro": "Mtra. Sofía Castro" },
+                    { "dia": "Lunes", "hora": "08:55 - 09:45", "materia": "Matemáticas para la Computación", "maestro": "Ing. Luis Torres" },
+                    { "dia": "Lunes", "hora": "09:50 - 10:40", "materia": "Desarrollo de API y Servicios", "maestro": "Lic. Fernando Ruiz" },
+                    { "dia": "Lunes", "hora": "10:45 - 11:35", "materia": "Aseguramiento de Calidad", "maestro": "Mtra. Sofía Castro" },
+                    { "dia": "Lunes", "hora": "11:40 - 12:30", "materia": "RECESO", "maestro": "Receso" },
+                    { "dia": "Lunes", "hora": "12:35 - 13:25", "materia": "Administración de Servidores", "maestro": "Mtra. Ana López" },
+                    { "dia": "Lunes", "hora": "13:30 - 14:20", "materia": "Inglés Técnico Avanzado", "maestro": "Teacher Sarah Connor" },
+                    { "dia": "Lunes", "hora": "14:20 - 15:10", "materia": "Habilidades Directivas", "maestro": "Lic. Fernando Ruiz" },
+
+                    { "dia": "Martes", "hora": "08:00 - 08:50", "materia": "Administración de Servidores", "maestro": "Mtra. Ana López" },
+                    { "dia": "Martes", "hora": "08:55 - 09:45", "materia": "Desarrollo de API y Servicios", "maestro": "Lic. Fernando Ruiz" },
+                    { "dia": "Martes", "hora": "09:50 - 10:40", "materia": "Aseguramiento de Calidad", "maestro": "Mtra. Sofía Castro" },
+                    { "dia": "Martes", "hora": "10:45 - 11:35", "materia": "Matemáticas para la Computación", "maestro": "Ing. Luis Torres" },
+                    { "dia": "Martes", "hora": "11:40 - 12:30", "materia": "RECESO", "maestro": "Receso" },
+                    { "dia": "Martes", "hora": "12:35 - 13:25", "materia": "Proyecto Final de Carrera", "maestro": "Mtra. Sofía Castro" },
+                    { "dia": "Martes", "hora": "13:30 - 14:20", "materia": "Inglés Técnico Avanzado", "maestro": "Teacher Sarah Connor" },
+                    { "dia": "Martes", "hora": "14:20 - 15:10", "materia": "Habilidades Directivas", "maestro": "Lic. Fernando Ruiz" },
+                    { "dia": "Martes", "hora": "15:10 - 16:00", "materia": "HORA EXTRACURRICULAR", "maestro": "Deportes" },
+
+                    { "dia": "Miércoles", "hora": "08:00 - 08:50", "materia": "Administración de Servidores", "maestro": "Mtra. Ana López" },
+                    { "dia": "Miércoles", "hora": "08:55 - 09:45", "materia": "Habilidades Directivas", "maestro": "Lic. Fernando Ruiz" },
+                    { "dia": "Miércoles", "hora": "09:50 - 10:40", "materia": "Aseguramiento de Calidad", "maestro": "Mtra. Sofía Castro" },
+                    { "dia": "Miércoles", "hora": "10:45 - 11:35", "materia": "Matemáticas para la Computación", "maestro": "Ing. Luis Torres" },
+                    { "dia": "Miércoles", "hora": "11:40 - 12:30", "materia": "RECESO", "maestro": "Receso" },
+                    { "dia": "Miércoles", "hora": "12:35 - 13:25", "materia": "Proyecto Final de Carrera", "maestro": "Mtra. Sofía Castro" },
+                    { "dia": "Miércoles", "hora": "13:30 - 14:20", "materia": "Inglés Técnico Avanzado", "maestro": "Teacher Sarah Connor" },
+                    { "dia": "Miércoles", "hora": "14:20 - 15:10", "materia": "Desarrollo de API y Servicios", "maestro": "Lic. Fernando Ruiz" },
+                    { "dia": "Miércoles", "hora": "15:10 - 16:00", "materia": "Desarrollo de API y Servicios", "maestro": "Lic. Fernando Ruiz" },
+
+                    { "dia": "Jueves", "hora": "08:00 - 08:50", "materia": "TUTORÍA GRUPAL", "maestro": "Lic. Martín Vargas" },
+                    { "dia": "Jueves", "hora": "08:55 - 09:45", "materia": "Matemáticas para la Computación", "maestro": "Ing. Luis Torres" },
+                    { "dia": "Jueves", "hora": "09:50 - 10:40", "materia": "Aseguramiento de Calidad", "maestro": "Mtra. Sofía Castro" },
+                    { "dia": "Jueves", "hora": "10:45 - 11:35", "materia": "Aseguramiento de Calidad", "maestro": "Mtra. Sofía Castro" },
+                    { "dia": "Jueves", "hora": "11:40 - 12:30", "materia": "RECESO", "maestro": "Receso" },
+                    { "dia": "Jueves", "hora": "12:35 - 13:25", "materia": "Inglés Técnico Avanzado", "maestro": "Teacher Sarah Connor" },
+                    { "dia": "Jueves", "hora": "13:30 - 14:20", "materia": "Administración de Servidores", "maestro": "Mtra. Ana López" },
+                    { "dia": "Jueves", "hora": "14:20 - 15:10", "materia": "Proyecto Final de Carrera", "maestro": "Mtra. Sofía Castro" },
+
+                    { "dia": "Viernes", "hora": "08:00 - 08:50", "materia": "Habilidades Directivas", "maestro": "Lic. Fernando Ruiz" },
+                    { "dia": "Viernes", "hora": "08:55 - 09:45", "materia": "Inglés Técnico Avanzado", "maestro": "Teacher Sarah Connor" },
+                    { "dia": "Viernes", "hora": "09:50 - 10:40", "materia": "Matemáticas para la Computación", "maestro": "Ing. Luis Torres" },
+                    { "dia": "Viernes", "hora": "10:45 - 11:35", "materia": "Administración de Servidores", "maestro": "Mtra. Ana López" },
+                    { "dia": "Viernes", "hora": "11:40 - 12:30", "materia": "RECESO", "maestro": "Receso" },
+                    { "dia": "Viernes", "hora": "12:35 - 13:25", "materia": "Desarrollo de API y Servicios", "maestro": "Lic. Fernando Ruiz" },
+                    { "dia": "Viernes", "hora": "13:30 - 14:20", "materia": "Desarrollo de API y Servicios", "maestro": "Lic. Fernando Ruiz" },
+                    { "dia": "Viernes", "hora": "14:20 - 15:10", "materia": "Aseguramiento de Calidad", "maestro": "Mtra. Sofía Castro" }
+                ]
+            }
+        }
+    },
+    "finanzas": {
+        "050280325": {
+            "adeudos": [
+                { "id": "AD-001", "concepto": "Reinscripción Cuatrimestre 4", "fecha_limite": "2026-01-15", "monto": 1500.00 },
+                { "id": "AD-002", "concepto": "Credencial Estudiantil", "fecha_limite": "2026-10-30", "monto": 150.00 }
+            ],
+            "pagos_realizados": [
+                { "folio": "REC-9876", "concepto": "Mensualidad Septiembre", "fecha_pago": "2026-09-05", "monto": 800.00 }
+            ]
+        },
+        "050280324": {
+            "adeudos": [
+                { "id": "AD-001", "concepto": "Reinscripción Cuatrimestre 4", "fecha_limite": "2026-01-15", "monto": 1500.00 }
+            ],
+            "pagos_realizados": [
+                { "folio": "REC-9877", "concepto": "Mensualidad Septiembre", "fecha_pago": "2026-09-10", "monto": 800.00 }
+            ]
+        }
+    }
+}

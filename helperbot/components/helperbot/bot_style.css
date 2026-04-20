@@ -1,0 +1,81 @@
+/* Contenedor principal */
+.helperbot-fixed-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    height: 500px;
+    background: #ffffff;
+    border: 2px solid #333333;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -4px 4px 15px rgba(0,0,0,0.15);
+    z-index: 9999;
+    transition: height 0.3s ease; /* Animación al minimizar */
+    overflow: hidden; /* Oculta lo de adentro al minimizar */
+}
+
+/* 🌟 NUEVO: Estado cuando está minimizado */
+.helperbot-fixed-container.minimized {
+    height: 45px !important; /* Solo se ve la cabecera */
+}
+
+/* Cabecera oscura (ahora es un botón para minimizar) */
+.helperbot-header {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer; /* Cambia el cursor a manita */
+    -webkit-user-select: none;
+    user-select: none;
+    height: 45px;
+    box-sizing: border-box;
+}
+
+.helperbot-header:hover { background-color: #222222; }
+
+/* Ocultar el contenido si está minimizado */
+.minimized .helperbot-messages,
+.minimized .helperbot-input-area {
+    display: none !important;
+}
+
+/* Área de mensajes */
+.helperbot-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: #f4f6f9;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overscroll-behavior: contain;
+}
+
+/* Mensajes y colores */
+.msg { padding: 12px 15px; border-radius: 6px; max-width: 85%; font-size: 14px; line-height: 1.5; word-wrap: break-word; }
+.msg.bot { align-self: flex-start; background-color: #ffffff; border: 2px solid #333333; color: #333; }
+.msg.user { align-self: flex-end; background-color: #f4faeb; border: 2px solid #8cc63f; color: #000; }
+
+/* Área de Input */
+.helperbot-input-area {
+    display: flex;
+    padding: 15px;
+    background: #ffffff;
+    border-top: 2px solid #333333;
+    gap: 10px;
+}
+#botInput { flex: 1; padding: 10px; border: 1px solid #7a7a7a; font-size: 14px; outline: none; border-radius: 4px; }
+#btnSendBot { background-color: #e1e1e1; border: 1px solid #707070; padding: 10px 15px; font-size: 14px; color: #000; cursor: pointer; font-weight: bold; border-radius: 4px; }
+#btnSendBot:hover { background-color: #d1d1d1; }
+
+/* Botones de la cabecera */
+.btn-limpiar { margin-left: auto; background: none; border: none; color: #ccc; cursor: pointer; font-size: 14px; padding: 0 5px; }
+.btn-limpiar:hover { color: #fff; }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIEST - Calificaciones</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* ESTILOS EXACTOS DE LA IMAGEN */
+        .periods-container { margin: 10px 15px; }
+        .periods-title { font-size: 12px; font-weight: bold; margin-bottom: 5px; }
+        .periods-bar { display: flex; gap: 5px; }
+        .period-block { border: 1px solid #ccc; padding: 10px 20px; text-align: center; cursor: pointer; background: #fff; min-width: 100px; }
+        .period-block:hover { background: #f0f0f0; }
+        .period-block.active { background-color: #cddc39; border-color: #8cc63f; }
+        .period-block .group-name { font-size: 18px; font-weight: bold; color: #000; }
+        .period-block .period-date { font-size: 11px; color: #555; margin-top: 3px; }
+
+        .grades-container { display: flex; margin: 0 15px 15px 15px; border: 1px solid #ccc; background: #fff; height: calc(100vh - 300px); }
+        
+        /* Barra lateral de asignaturas */
+        .subjects-sidebar { width: 280px; border-right: 1px solid #ccc; display: flex; flex-direction: column; }
+        .sidebar-header { background: #444; color: #fff; padding: 8px; font-weight: bold; font-size: 12px; }
+        .subjects-list { overflow-y: auto; flex: 1; }
+        .subject-item { display: flex; padding: 10px; border-bottom: 1px solid #eee; cursor: pointer; align-items: center; }
+        .subject-item:hover { background: #f9f9f9; }
+        .subject-item.active { background-color: #f4faeb; border-left: 4px solid #8cc63f; }
+        .subject-icon { width: 35px; height: 35px; border-radius: 50%; background: #e67e22; color: white; display: flex; align-items: center; justify-content: center; font-size: 18px; margin-right: 10px; }
+        .subject-name { font-size: 12px; font-weight: bold; color: #000; line-height: 1.2; }
+        .subject-teacher { font-size: 11px; color: #666; margin-top: 4px; }
+
+        /* Tabla de instrumentos */
+        .instruments-view { flex: 1; display: flex; flex-direction: column; }
+        .instruments-header { background: #444; color: white; display: flex; padding: 8px; font-size: 12px; font-weight: bold; }
+        .col-name { flex: 1; }
+        .col-weight { width: 80px; text-align: center; }
+        .col-grade { width: 80px; text-align: center; }
+        .col-level { width: 80px; text-align: center; }
+        .instruments-body { overflow-y: auto; flex: 1; }
+        
+        .unit-row { background: #f2f2f2; display: flex; padding: 8px; font-size: 12px; font-weight: bold; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc; }
+        .instrument-row { display: flex; padding: 6px 8px; font-size: 12px; border-bottom: 1px solid #efefef; align-items: center; }
+        .instrument-row .col-name { padding-left: 15px; color: #666; }
+        .instrument-row .col-weight { font-weight: bold; }
+        .instrument-row .col-grade { font-weight: bold; color: #000; }
+        
+        .loader-msg { padding: 20px; text-align: center; color: #666; font-style: italic; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <div class="top-admin-bar">
+        <div><button class="btn-modulos">Módulos</button></div>
+        <div class="top-user-actions">
+            <span>Bienvenido <strong id="nombreUsuario">Cargando...</strong></span>
+            <button class="btn-system" onclick="window.cerrarSesion()">Cerrar Sesión</button>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <div class="header-main-title">
+            <i class="fa-solid fa-play green-arrow-icon"></i>
+            Panel del alumno
+        </div>
+        <div class="breadcrumb-text">Proceso de Planeación >> Planeación y evaluación</div>
+    </div>
+
+    <div class="tabs-navigation">
+        <a href="inicio.html" class="tab-link">Información general</a>
+        <a href="calificaciones.html" class="tab-link active">Calificaciones</a>
+        <a href="horario.html" class="tab-link">Horario</a>
+        <a href="pagos.html" class="tab-link">Pagos</a>
+        <a href="buzon.html" class="tab-link">Buzón de Quejas</a>
+    </div>
+
+    <div class="periods-container">
+        <div class="periods-title">Periodos/grupos:</div>
+        <div class="periods-bar" id="periodsBar">
+            <div class="loader-msg">Cargando periodos...</div>
+        </div>
+    </div>
+
+    <div class="grades-container">
+        <div class="subjects-sidebar">
+            <div class="sidebar-header">Asignaturas:</div>
+            <div class="subjects-list" id="subjectList"></div>
+        </div>
+
+        <div class="instruments-view">
+            <div class="instruments-header">
+                <div class="col-name">Instrumentos de evaluación</div>
+                <div class="col-weight">Ponderación</div>
+                <div class="col-grade">Calificación</div>
+                <div class="col-level">Nivel</div>
+            </div>
+            <div class="instruments-body" id="instrumentsBody">
+                <div class="loader-msg">Selecciona una asignatura para ver el desglose.</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/auth_router.js"></script>
+    <script src="calificaciones_app.js"></script>
+    <script type="module" src="../components/helperbot/bot_ui.js"></script>
+</body>
+</html>

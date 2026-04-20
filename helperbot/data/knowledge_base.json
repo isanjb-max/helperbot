@@ -1,0 +1,18 @@
+[
+  {
+    "keywords": ["calendario", "fechas", "inicio", "clases", "vacaciones"],
+    "info": "El cuatrimestre actual inició el 2 de Septiembre. Las vacaciones de invierno comienzan el 18 de Diciembre. El periodo de reinscripciones es del 5 al 10 de Enero."
+  },
+  {
+    "keywords": ["formato", "justificante", "falta", "enfermedad"],
+    "info": "FORMATO DE JUSTIFICANTE: Para justificar una falta, el alumno debe redactar un documento con el siguiente formato: 'Por medio de la presente, yo [Nombre del Alumno], con matrícula [Matrícula], solicito justificar mi inasistencia del día [Fecha] debido a [Motivo]. Adjunto evidencia médica.' Este documento debe entregarse firmado en Control Escolar."
+  },
+  {
+    "keywords": ["formato", "beca", "solicitud"],
+    "info": "FORMATO DE BECA INSTITUCIONAL: 'Solicitud de Beca - [Nombre del Alumno] - [Carrera]. Solicito ser considerado para la beca de excelencia académica para el cuatrimestre en curso, comprometiéndome a mantener un promedio mínimo de 9.0.'"
+  },
+  {
+    "keywords": ["rector", "director", "ubicacion", "universidad"],
+    "info": "La Universidad Tecnológica de la Costa (UT Costa) está ubicada en Santiago Ixcuintla, Nayarit. Nuestro objetivo es formar profesionales técnicos con alto sentido de responsabilidad."
+  }
+]
